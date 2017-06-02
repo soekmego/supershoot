@@ -30,7 +30,7 @@ class Player(pg.sprite.Sprite):
             #by the squareroot of 2. since we dont want to import
             #the math lib, to save some memory during runtime,
             #the best solution is to use 1.414, which is the 
-            #sqroot of 2.
+            #squareroot of 2.
             self.vx /= 1.414
             self.vy /= 1.414
 
