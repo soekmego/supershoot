@@ -25,8 +25,8 @@ class Player(pg.sprite.Sprite):
         if keys[pg.K_DOWN] or keys[pg.K_s]:
             self.vy = PLAYER_SPEED
         if self.vy != 0 and self.vx != 0:
-            self.vx *= 0.7071
-            self.vy *= 0.7071
+            self.vx /= 1.414
+            self.vy /= 1.414
 
     def move(self, dx = 0, dy = 0):
         if not self.collide_with_walls(dx, dy):
